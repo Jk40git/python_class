@@ -160,25 +160,35 @@ fruits = [
 # sign_in('jacobkondo4gmail.com', '0544265497', 'jk') 
 
 
-personalInfor= [
-    {
-        "name": "marley",
-        "age": 20,
-        "address": {
-            "country": "Ghana",
-            "zip_code": "+233",
-            "phoneNumbers": [
-                7777777, 
-                900000
-            ],
-        },
-        "gender": "male",
-        "occupation": ("developer")
-}
-]
-personalInfor[0]['occupation']='dancer'
+# personalInfor= [
+#     {
+#         "name": "marley",
+#         "age": 20,
+#         "address": {
+#             "country": "Ghana",
+#             "zip_code": "+233",
+#             "phoneNumbers": [
+#                 7777777, 
+#                 900000
+#             ],
+#         },
+#         "gender": "male",
+#         "occupation": ("developer")
+# }
+# ]
+# personalInfor[0]['occupation']='dancer'
 
-print(tuple(personalInfor[0]['address']['phoneNumbers']))
+# print(tuple(personalInfor[0]['address']['phoneNumbers']))
+
+class Human:
+    def __init__(self, name, color, height, age):
+        self.name= name
+        self.color= color
+        self.height= height
+        self.age= age
+    
+firstHuman= Human('kofi', 'red', '2.00', '30')
+print('firstHuman:', 'name:', firstHuman.name, 'age:', firstHuman.age, 'color:', firstHuman.color, 'height:', firstHuman.height)
 
 
 

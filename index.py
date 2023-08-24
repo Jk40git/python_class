@@ -180,26 +180,90 @@ fruits = [
 
 # print(tuple(personalInfor[0]['address']['phoneNumbers']))
 
-class Human:
-    def __init__(self, name, color, height, age):
-        self.name= name
-        self.color= color
-        self.height= height
-        self.age= age
+# class Human:
+#     def __init__(self, name, color, height, age):
+#         self.name= name
+#         self.color= color
+#         self.height= height
+#         self.age= age
     
-firstHuman= Human('kofi', 'red', '2.00', '30')
-print('firstHuman:', 'name:', firstHuman.name, 'age:', firstHuman.age, 'color:', firstHuman.color, 'height:', firstHuman.height)
+# firstHuman= Human('kofi', 'red', '2.00', '30')
+# print('firstHuman:', 'name:', firstHuman.name, 'age:', firstHuman.age, 'color:', firstHuman.color, 'height:', firstHuman.height)
 
 
+# class Car:
+#     # properties
+#     def __init__(self, Pname, Pcolor, Pmodel, Pyear):
+#         self.name = Pname
+#         self.color = Pcolor
+#         self.model = Pmodel
+#         self.year = Pyear
+
+#     # methods
+#     def can_drive(self):
+#         return f'{self.name} i can drive or move'
+
+# fcar= Car('BMW', 'blue','c230',2022)
+# print(fcar.name)
 
 
+# class Person:
+#   def __init__(self, fname, lname):
+#     self.firstname = fname
+#     self.lastname = lname
+
+#   def printname(self):
+#     print(self.firstname, self.lastname)
+
+# Use the Person class to create an object, and then execute the printname method:
+
+# x = Person("John", "Doe")
+# x.printname()
 
 
+# class Student(Person):
+#       pass
+
+
+# stu1 =Student('kwame','sika')
+# print(stu1.lastname)
+import json
+import datetime
+todayDate= datetime.datetime.now()
+
+# print(todayDate.strftime("%b"))
+      
+x = {
+    "name": "John",
+    "age": 30,
+    "married": True,
+    "divorced": False,
+    "children": ("Ann","Billy"),
+    "pets": None,
+    "cars": [
+        {"model": "BMW 230", "mpg": 27.5},
+        {"model": "Ford Edge", "mpg": 24.1}
+    ]
+} 
+# k =json.dumps(x)
+# print(type(k))
+
+# 2023/07/17 
     
-    
-    
-    
+# q = '{"name":"John", "age":30, "city":"New York"}'
+# y = json.loads(q)
+# print(type(y))
+
+# print(todayDate.strftime("%b"))
+# print(todayDate.strftime('%A'))
+# print(todayDate.strftime('%a'))
+# print(todayDate.strftime('%Y'))
+# print(todayDate.strftime('%y'))
+# print(todayDate.strftime('%H'))
+# print(todayDate.strftime('%I'))
+# print(todayDate.strftime('%I'))
+# print(todayDate.strftime('%z'))
+# print(todayDate.strftime('%m'))
 
 
-
-
+print(todayDate.strftime('%x'))
